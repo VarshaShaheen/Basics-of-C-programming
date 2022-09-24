@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-   int a,i,fact=1,flag;
-   printf("Enter the number: \n");
-   scanf("%d",&a);
-   flag=a;
-   while(a){
-     fact*=a;
-     a--;
+   int flag=0,n,rem;
+   printf("Enter the number:\n");
+   scanf("%d",&n);
+   while(n){
+       rem=n%10;
+       flag=(flag*10)+rem;
+       n/=10;
    }
-   printf("The factorial of %d is %d",flag,fact);
+   printf("\n%d",flag);
 }
