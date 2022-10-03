@@ -1,7 +1,8 @@
 /*to print
- *    *
- *    **
- *    *** */
+ *    if n=3
+ *    1
+ *    22
+ *    333 */
 
 #include <stdio.h>
 
@@ -9,9 +10,9 @@ int main(){
     int n,i,j;
    printf("Enter the number of rows:\n");
    scanf("%d",&n);
-   for(i=0;i<n;i++){
-       for(j=0;j<=i;j++){
-           printf("*");
+   for(i=1;i<=n;i++){
+       for(j=0;j<i;j++){
+           printf("%d",i);
        }
        printf("\n");
    }
