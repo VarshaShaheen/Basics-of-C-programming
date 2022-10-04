@@ -13,7 +13,7 @@ void input(int arr[100],int n){
 void print(int arr[100],int n){
     int i;
     for(i=0;i<n;i++){
-    printf("%d",arr[i]);
+        printf("%d",arr[i]);
     }
 }
 
