@@ -16,7 +16,7 @@ int main(){
     for(i=0;i<r;i++){
         for(j=0;j<c;j++){
             if(i==j){
-               sum+=arr[i][j];
+                sum+=arr[i][j];
             }
         }
     }
