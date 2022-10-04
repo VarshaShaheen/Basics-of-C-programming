@@ -15,17 +15,17 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d %s %d",&s[i].roll_no,&s[i].name,&s[i].tm);
     }
-  for(i=0;i<n-1;i++) {
-      for (j = 0;j<n-i-1;j++) {
-          if (s[j].tm > s[j + 1].tm) {
-              temp = s[j];
-              s[j] = s[j + 1];
-              s[j + 1] = temp;
-          }
-      }
-  }
+    for(i=0;i<n-1;i++) {
+        for (j = 0;j<n-i-1;j++) {
+            if (s[j].tm > s[j + 1].tm) {
+                temp = s[j];
+                s[j] = s[j + 1];
+                s[j + 1] = temp;
+            }
+        }
+    }
 
-        for(i=n-1;i>=0;i--){
+    for(i=n-1;i>=0;i--){
         printf("roll_no:%d\nname: %s\nTotal marks %d \n",s[i].roll_no,s[i].name,s[i].tm);
     }
 
