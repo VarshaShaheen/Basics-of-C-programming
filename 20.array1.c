@@ -17,7 +17,7 @@ int main(){
     scanf("%d",&n);
     input(arr,n);
     for(i=0;i<n;i++){
-       sum+=arr[i];
+        sum+=arr[i];
     }
     avg=sum/n;
     printf("The sum is %d\n",sum);
