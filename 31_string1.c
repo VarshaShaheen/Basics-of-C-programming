@@ -1,18 +1,19 @@
-//frequency of a character in a string
+//occurance of a character
 
 #include <stdio.h>
 
 int main(){
     char a[100],f;
-    int i,count=0;
+    int i=0,count=0;
     printf("enter the string\n");
     gets(a);
     printf("Enter the character\n");
     scanf("%ch",&f);
-    for(i=0;a[i]!='\0';i++){
+    while(a[i]){
         if(a[i]==f){
             count++;
         }
+        i++;
     }
     if(count==0){
         printf("character not found");
